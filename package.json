@@ -1,0 +1,20 @@
+{
+  "name": "inmweek1",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "lite-server --baseDir=\"public\""
+  },
+  "author": "Gina Yu",
+  "license": "private",
+  "private": true,
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "@glidejs/glide": "^3.6.0",
+    "darkmode-js": "^1.5.7",
+    "jquery": "^3.7.1",
+    "parsleyjs": "^2.9.2"
+  }
+}

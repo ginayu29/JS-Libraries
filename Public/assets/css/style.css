@@ -1,0 +1,222 @@
+/* General Styling */
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.bodytext {
+  font-size: 16px; /* Adjust font size as needed */
+  line-height: 1.5; /* Adjust line height as needed */
+  color: #333; /* Adjust text color as needed */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+}
+
+.section {
+  padding-top: 100px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container1 {
+  width: 80%;
+  margin: 20px auto;
+}
+
+/* hero image styling */
+.hero {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  margin: 15px;
+}
+
+/* glide styling */
+.products {
+  height: 30vh;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px;
+}
+
+.glide__slide img {
+  max-height: 300px;
+  height: auto;
+  width: 100%;
+  z-index: 2;
+}
+
+.glide__slide {
+  text-align: center;
+  margin-top: auto;
+}
+
+.glide__slide p {
+  color: #ffffff;
+  padding: 10px;
+}
+
+/* Dark Mode Styling */
+.darkmode-toggle::after {
+  content: "🌓";
+}
+
+/* Footer Styling */
+footer {
+  color: #000000;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Contact Form Styling */
+.contactbox {
+  width: 95%;
+  margin: auto;
+  background-color: #9e9e9e;
+  color: #000000;
+}
+
+#contact-form {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+#contact-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+#contact-form input[type="submit"] {
+  align-self: flex-end;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#contact-form input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Parsley Styling for Contact Form */
+.parsley-errors-list li {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+  padding: 5px;
+}
+
+/* Bideo.js Styling */
+#container {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+
+#background_video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+#video_cover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url('video_cover.jpeg') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#main_content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-weight: 500;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.582);
+  z-index: 2;
+  padding: 10px;
+}
+
+#main_content h1 {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: 'proxima-nova-condensed', Helvetica;
+  color: #ffffff;
+  font-size: 35px;
+}
+
+#main_content .sub_head {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 18px;
+}
+
+#main_content .info {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+  #video_controls {
+    display: none;
+  }
+}

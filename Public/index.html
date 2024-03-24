@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 1</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <!-- Glide Style Links -->
+    <link rel="stylesheet" href="assets/css/glide.core.min.css">
+    <link rel="stylesheet" href="assets/css/glide.theme.min.css">
+</head>
+
+<body>
+    <!-- Fixed header -->
+    <header class="fixed-header">
+        <h1>Welcome to Sleek End Furniture Store</h1>
+    </header>
+
+    <!-- fullpage.js carosel -->
+    <div id="fullpage">
+        <!-- About the Website Welcome -->
+        <div class="section">
+            <div class="container1">
+                <h2>For all your Sleek and Modern Furniture Needs</h2>
+                <div class="hero">
+                    <img src="/assets/images/Artboard 3.png">
+                </div>
+                <p class="bodytext">
+                    Welcome to Sleek End Furniture Store, where sophistication meets functionality in every
+                    piece we offer.
+                </p>
+                <p class="bodytext">
+                    Elevate your living space with our curated collection of modern furniture designed to
+                    complement any aesthetic. From sleek sofas and elegant dining sets to minimalist coffee tables and
+                    chic
+                    accessories, we bring you premium quality at affordable prices. Whether you're furnishing a cozy
+                    apartment
+                    or redesigning your entire home, our diverse range ensures you'll find the perfect pieces to suit
+                    your
+                    style. With a commitment to both style and substance, our furniture combines contemporary design
+                    with
+                    durable materials, ensuring longevity without compromising on aesthetics. Explore our catalog today
+                    and
+                    discover how Sleek End Furniture Store can transform your space into a haven of modern elegance and
+                    comfort.
+                </p>
+            </div>
+        </div>
+        <!-- Glide Carousel of Products -->
+        <div id="products">
+            <h2>Find the perfect Sleek End Furniture piece for you.</h2>
+            <!-- Glide Carousel -->
+            <div class="glide">
+                <div data-glide-el="track" class="glide__track">
+                    <ul class="glide__slides">
+                        <li class="glide__slide">
+                            <img src="assets/images/Couch.jpeg" alt="Yellow Couch" id="darkmode-exclude">
+                            <p>Gold Yellow Couch</p>
+                        </li>
+                        <li class="glide__slide">
+                            <img src="assets/images/armchair.jpeg" alt="Modern blue chair">
+                            <p>Modern Blue Egg Chair</p>
+                        </li>
+                        <li class="glide__slide">
+                            <img src="assets/images/Cabinet.jpeg" alt="Retro TV-Stand Cabinet">
+                            <p>Retro TV-Stand Cabinet</p>
+                        </li>
+                        <li class="glide__slide">
+                            <img src="assets/images/desk.jpeg" alt="Sleek Computer Desk">
+                            <p>Sleep Computer Desk & Cabinet</p>
+                        </li>
+                        <li class="glide__slide">
+                            <img src="assets/images/sofa.jpeg" alt="Black Sofa">
+                            <p>Modern Black Sofa</p>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Add arrows for the glider -->
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+                </div>
+            </div>
+        </div>
+        <!-- Consultation with Bideo background -->
+        <div class="section">
+            <div id="container">
+                <video id="background_video" autoplay loop muted>
+                    <source src="/assets/images/production_id_4824284 (2160p).mp4" type="video/mp4">
+                </video>
+                <section id="main_content">
+                    <div id="head">
+                        <h1>Custom Consultation and Personalized Furniture</h1>
+                        <p class="sub_head">Book a Consultation with us to find the best, customized Sleek End Furniture
+                            piece for you today.</p>
+                        <p class="info">(Hold on! The video might take a while to load.)</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <div class="section">
+            <!-- Parsley JS Contact form -->
+            <div class="contactbox">
+                <h2>Arrange a Consultation.</h2>
+                <form id="contact-form" data-parsley-validate>
+
+                    <label for="fullname">
+                        <p>Full Name * :</p>
+                    </label>
+                    <input type="text" class="form-control" name="fullname" required>
+
+                    <label for="email">
+                        <p>Email:</p>
+                    </label>
+                    <input type="email" class="form-control" name="email" data-parsley-trigger="change" required>
+
+                    <p>
+                        <label for="message">Message (20 chars min, 100 max) :</label>
+                        <textarea id="message" class="form-control" name="message" data-parsley-trigger="keyup"
+                            data-parsley-minlength="20" data-parsley-maxlength="100"
+                            data-parsley-minlength-message="Please enter at least a 20 character comment or question."
+                            data-parsley-validation-threshold="10">
+                    </textarea>
+                    </p>
+
+                    <br>
+                    <input type="submit" class="btn btn-default" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dark mode Script -->
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <script>
+        function addDarkmodeWidget() {
+            new Darkmode().showWidget();
+        }
+        window.addEventListener('load', addDarkmodeWidget);
+    </script>
+    <!-- Glide Script -->
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+        // Initialize Glide carousel
+        new Glide('.glide', {
+            type: 'carousel',
+            perView: 2,
+            breakpoints: {
+                800: {
+                    perView: 1
+                },
+                1024: {
+                    perView: 2
+                },
+                4000: {
+                    perView: 3
+                }
+            }
+        }).mount();
+    </script>
+
+    <!-- Parsley Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/js/parsley.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('#contact-form').parsley().on('field:validated', function () {
+                var ok = $('.parsley-error').length === 0;
+                $('.bs-callout-info').toggleClass('hidden', !ok);
+                $('.bs-callout-warning').toggleClass('hidden', ok);
+            })
+                .on('form:submit', function () {
+                    return false; // Don't submit form for this demo
+                });
+        });
+    </script>
+
+    <!-- bideo script -->
+    <script>
+        if (window.location.host.indexOf('github.io') !== -1 && window.location.protocol !== "https:") {
+            window.location.protocol = "https";
+        }
+    </script>
+    <!-- Link to bideo.js -->
+    <script src="assets/js/bideo.js"></script>
+    <!-- Link to javascript page -->
+    <script src="assets/js/javascript.js"></script>
+</body>
+
+</html>
